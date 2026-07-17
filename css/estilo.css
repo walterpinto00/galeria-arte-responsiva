@@ -1,0 +1,342 @@
+/* ==========================================
+   1. Estilos Generales y Base
+   ========================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f1ea; /* Fondo crema tipo museo */
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    background-color: #1a1a1a;
+    color: #b0b0b0;
+    padding: 40px 20px;
+    margin-top: 50px;
+    border-top: 4px solid #cca43b;
+}
+
+.footer-bloque h3 {
+    color: #cca43b;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+/* ==========================================
+   2. Menú de Navegación (Uso de Clases)
+   ========================================== */
+.menu-navegacion {
+    background-color: #1a1a1a; /* Fondo oscuro elegante */
+    padding: 15px;
+    text-align: center;
+}
+
+.enlace-menu {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+/* Efecto Hover para interactividad */
+.enlace-menu:hover {
+    color: #cca43b; /* Dorado artístico al pasar el cursor */
+}
+
+/* ==========================================
+   3. Contenedor y Textos (Uso de Clases)
+   ========================================== */
+.contenedor-principal {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.titulo-galeria {
+    font-size: 32px;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    font-style: italic;
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+/* ==========================================
+   4. Obra Destacada (Uso de ID y Clases)
+   ========================================== */
+/* El ID identifica de forma única la sección de la obra maestra */
+#obra-principal {
+    background-color: #ffffff;
+    border: 1px solid #e0dcd3;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.marco-cuadro {
+    background-color: #000000;
+    padding: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    border: 5px solid transparent; 
+    transition: border-color 0.3s ease; 
+}
+
+.marco-cuadro:hover {
+    border-color: #ffd700;
+    cursor: pointer;
+}
+
+.imagen-cuadro {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    max-height: 500px; /* Evita que se desborde en pantallas grandes */
+}
+
+.info-cuadro h2 {
+    color: #1a1a1a;
+    margin: 10px 0;
+}
+
+.autor {
+    color: #cca43b;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.descripcion {
+    line-height: 1.6;
+    color: #555555;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ==========================================
+   5. Pie de Página
+   ========================================== */
+footer {
+    background-color: #1a1a1a;
+    color: #888888;
+    text-align: center;
+    padding: 15px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+\/\*\*/ INSERT_YOUR_CODE */
+.galeria-gabo {
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 24px;
+}
+
+.titulo-galeria-secundaria {
+    color: #333;
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 22px;
+}
+
+.contenedor-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 36px;
+    justify-content: center;
+}
+
+.card-obra {
+    background: #fdf6e3;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.11), 0 1.5px 4px rgba(0,0,0,0.07);
+    width: 340px;
+    max-width: 90vw;
+    margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: box-shadow 0.26s, transform 0.24s;
+}
+
+.card-obra:hover {
+    box-shadow: 0 14px 34px rgba(204,164,59,0.14), 0 1.5px 8px rgba(0,0,0,0.10);
+    transform: translateY(-5px) scale(1.03);
+}
+
+.card-obra .marco-cuadro {
+    padding: 10px;
+    margin-bottom: 0;
+    background-color: #ece5cf;
+    width: 100%;
+    border-top-left-radius: 18px;
+    border-top-right-radius: 18px;
+    box-sizing: border-box;
+}
+
+.card-obra .imagen-cuadro {
+    border-radius: 10px;
+    object-fit: cover;
+    height: 220px;
+    width: 100%;
+    box-shadow: 0 2.5px 10px rgba(226,193,75,0.09);
+}
+
+.card-obra .info-cuadro {
+    padding: 20px 20px 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card-obra h3 {
+    font-size: 1.25rem;
+    color: #1a1a1a;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.card-obra .autor {
+    font-size: 1rem;
+    margin: 2px 0 10px 0;
+}
+
+.card-obra .descripcion {
+    font-size: 0.97rem;
+    color: #444;
+    margin-bottom: 0;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 900px) {
+    .contenedor-cards {
+        gap: 24px;
+    }
+    .card-obra {
+        width: 95vw;
+        max-width: 470px;
+    }
+    .galeria-gabo {
+        padding: 0 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .titulo-galeria-secundaria { font-size: 1.25rem; text-align: center; }
+    .contenedor-cards { flex-direction: column; gap: 18px; align-items: center; }
+    .card-obra { width: 100%; min-width: 0; max-width: 375px; }
+    .card-obra .marco-cuadro { padding: 7px; }
+    .card-obra .imagen-cuadro { height: 160px; }
+    .card-obra .info-cuadro { padding: 14px 10px 8px 10px; }
+    
+    /* Mueve los modales aquí si quieres, pero NO el carrusel */
+    .modal-pantalla:target { display: block; }
+}
+
+/* --- ESTA LÓGICA DEBE ESTAR AFUERA (FUERA DEL MEDIA QUERY) --- */
+/* Modales */
+.modal-pantalla { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.8); z-index: 999; }
+.modal-pantalla:target { display: block; }
+.modal-contenido { background-color: white; width: 80%; max-width: 400px; margin: 100px auto; padding: 20px; border-radius: 10px; text-align: center; }
+
+/* Carrusel - Funcionalidad global */
+.carrusel-contenedor { position: relative; }
+.carrusel-slides { display: flex !important; width: 300% !important; transition: transform 0.5s ease; }
+.carrusel-item { width: 33.333% !important; }
+
+/* Lógica de movimiento */
+#slide-1:checked ~ .carrusel-slides { transform: translateX(0%); }
+#slide-2:checked ~ .carrusel-slides { transform: translateX(-33.333%); }
+#slide-3:checked ~ .carrusel-slides { transform: translateX(-66.666%); }
+
+/* Flechas */
+.carrusel-flechas div { display: none; position: absolute; top: 40%; width: 100%; left: 0; justify-content: space-between; padding: 0 25px; box-sizing: border-box; }
+#slide-1:checked ~ .carrusel-flechas .controles-slide-1,
+#slide-2:checked ~ .carrusel-flechas .controles-slide-2,
+#slide-3:checked ~ .carrusel-flechas .controles-slide-3 { display: flex; }
+
+.carrusel-slides {
+    display: flex !important;
+    width: 300% !important;
+    transition: transform 0.6s ease;
+}
+
+/* Asegurar que cada imagen ocupe 1/3 del ancho */
+.carrusel-item {
+    width: 33.333% !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Movimiento basado en el radio button seleccionado */
+#slide-1:checked ~ .carrusel-slides { transform: translateX(0%); }
+#slide-2:checked ~ .carrusel-slides { transform: translateX(-33.333%); }
+#slide-3:checked ~ .carrusel-slides { transform: translateX(-66.666%); }
+
+/* Lógica de las flechas (Ocultar todas, mostrar solo la activa) */
+.carrusel-flechas div {
+    display: none; 
+    position: absolute; 
+    top: 40%; 
+    width: 100%; 
+    left: 0; 
+    justify-content: space-between; 
+    padding: 0 25px; 
+    box-sizing: border-box;
+}
+#slide-1:checked ~ .carrusel-flechas .controles-slide-1,
+#slide-2:checked ~ .carrusel-flechas .controles-slide-2,
+#slide-3:checked ~ .carrusel-flechas .controles-slide-3 {
+    display: flex;
+} 
+
+
+.carrusel-contenedor {
+    height: 450px !important; 
+    position: relative;
+    overflow: hidden; 
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carrusel-item img {
+    width: 100% !important;
+    height: 450px !important; 
+    object-fit: cover; 
+    display: block;
+}
+
+.carrusel-slides {
+    display: flex !important;
+    height: 100% !important;
+    .flecha {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-weight: bold;
+    z-index: 10; /* Esto asegura que la flecha quede por encima de la imagen */
+}
+
+/* Asegurar que el click en la flecha funcione */
+.carrusel-flechas div {
+    pointer-events: none; /* El contenedor invisible no bloquea el click */
+}
+.flecha {
+    pointer-events: auto; /* La flecha sí recibe el click */
+}
+}

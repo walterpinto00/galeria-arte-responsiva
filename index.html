@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Arte - Exposición Principal</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    
+</head>
+<body>
+
+    <header>
+        <nav class="menu-navegacion">
+            <a href="#" class="enlace-menu">Inicio</a>
+            <a href="#" class="enlace-menu">Galería</a>
+            <a href="#" class="enlace-menu">Quiénes Somos</a>
+            <a href="#" class="enlace-menu">Contactos</a>
+        </nav>
+    </header>
+
+    <main class="contenedor-principal">
+    <h1 class="titulo-galeria">Exposición Contemporánea</h1>
+    <p class="subtitulo">Explorando el realismo y la irreverencia.</p>
+
+    <section id="obra-principal">
+        <div class="marco-cuadro">
+            <img src="img/principal.jpg" alt="Retrato de Gabriel García Márquez" class="imagen-cuadro">
+        </div>      
+        <div class="info-cuadro">
+            <h2>"La irreverencia del genio"</h2>
+            <p class="autor">Homenaje a Gabriel García Márquez</p>
+            <p class="descripcion">Una pieza impactante que combina el retrato al óleo...</p>
+        </div>
+
+        <div class="marco-cuadro">
+            <img src="img/principal.jpg" alt="Segunda obra" class="imagen-cuadro">
+        </div>
+        <div class="info-cuadro">
+            <h2>"Nueva Perspectiva"</h2>
+            <p class="autor">Autor Invitado</p>
+            <p class="descripcion">Una exploración abstracta que complementa la visión contemporánea de la muestra.</p>
+        </div>
+    </section>
+</main>
+
+
+    <!-- INSERT_YOUR_CODE -->
+    <section class="galeria-gabo">
+        <h2 class="titulo-galeria-secundaria">Obras destacadas de Gabriel García Márquez</h2>
+        <div class="contenedor-cards">
+            <!-- Card 1 -->
+            <div class="card-obra">
+                <div class="marco-cuadro">
+                    <img src="img/cien.jpg.jpg" alt="Cien años de soledad" class="imagen-cuadro">
+                </div>
+                <div class="info-cuadro">
+                    <h3>"Cien años de soledad"</h3>
+                    <p class="autor">1967</p>
+                    <p class="descripcion">
+                        La novela más emblemática del realismo mágico. Narra la historia de la familia Buendía a lo largo de generaciones en el mítico Macondo.
+                    </p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="card-obra">
+                <div class="marco-cuadro">
+                    <img src="img/El amor en los tiempos del cólera.jpg.jpg" alt="El amor en los tiempos del cólera" class="imagen-cuadro">
+                </div>
+                <div class="info-cuadro">
+                    <h3>"El amor en los tiempos del cólera"</h3>
+                    <p class="autor">1985</p>
+                    <p class="descripcion">
+                        Una historia de amor perseverante, ambientada en el Caribe colombiano, que explora la espera, el paso del tiempo y la pasión.
+                    </p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card-obra">
+                <div class="marco-cuadro">
+                    <img src="img/Cronica de una muerte anunciada.jpg.jpg" alt="Crónica de una muerte anunciada" class="imagen-cuadro">
+                </div>
+                <div class="info-cuadro">
+                    <h3>"Crónica de una muerte anunciada"</h3>
+                    <p class="autor">1981</p>
+                    <p class="descripcion">
+                        Crónica periodística y novela a la vez, retrata la reconstrucción de un crimen anunciado por todo un pueblo.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- reproducir video -->
+    <section class="seccion-video">
+    
+    <h2 style="text-align: center;">Documental y Acciones</h2>
+    
+    <div style="text-align: center; margin-bottom: 30px;">
+        <iframe 
+            width="750" 
+            height="420" 
+            src="img/video/GABRIEL GARCÍA MÁRQUEZ  Draw My Life - TikTak Draw (1080p, h264).mp4" 
+            title="GABRIEL GARCÍA MÁRQUEZ | Draw My Life" 
+            frameborder="0" 
+            style="max-width: 100%; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.15);"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+        
+    </div>
+
+<section class="seccion-carrusel">
+    <h2 style="text-align: center;">Línea de Tiempo Visual</h2>
+    
+    <div class="carrusel-contenedor" style="position: relative; width: 400px; margin: 0 auto; overflow: hidden; border: 5px solid #cca43b; border-radius: 10px;">
+        
+        <input type="radio" name="carrusel-control" id="slide-1" checked hidden>
+        <input type="radio" name="carrusel-control" id="slide-2" hidden>
+        <input type="radio" name="carrusel-control" id="slide-3" hidden>
+
+        <div class="carrusel-slides" style="display: flex; width: 300%; transition: transform 0.5s ease;">
+            <div class="carrusel-item" style="width: 100%;"><img src="img/principal.jpg" style="width: 100%;"></div>
+            <div class="carrusel-item" style="width: 100%;"><img src="img/Cronica de una muerte anunciada.jpg.jpg" style="width: 100%;"></div>
+            <div class="carrusel-item" style="width: 100%;"><img src="img/El amor en los tiempos del cólera.jpg.jpg" style="width: 100%;"></div>
+        </div>
+
+        <div class="carrusel-flechas">
+            <div class="controles-slide-1">
+                <label for="slide-3" class="flecha">&#10094;</label>
+                <label for="slide-2" class="flecha">&#10095;</label>
+            </div>
+            <div class="controles-slide-2">
+                <label for="slide-1" class="flecha">&#10094;</label>
+                <label for="slide-3" class="flecha">&#10095;</label>
+            </div>
+            <div class="controles-slide-3">
+                <label for="slide-2" class="flecha">&#10094;</label>
+                <label for="slide-1" class="flecha">&#10095;</label>
+            </div>
+        </div>
+        </div>
+</section>
+    <footer class="footer-web" style="background:#1a1a1a; color:white; padding:2rem; text-align:center;">
+        <h3>Información de la web</h3>
+        <ul style="list-style:none; padding:0;">
+            <li><a href="#" style="color:#cca43b;">Políticas de publicación</a></li>
+            <li><a href="#" style="color:#cca43b;">Manejo de redes sociales</a></li>
+            <li><a href="#" style="color:#cca43b;">Derechos de autor</a></li>
+        </ul>
+    </footer>
+
+</body>
+
+
+</html>
+
